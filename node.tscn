@@ -1,5 +1,93 @@
 [gd_scene format=3 uid="uid://bhss2rc30pepk"]
 
+[ext_resource type="Texture2D" uid="uid://cng40x0xp7xfo" path="res://slime sprite.webp" id="1_j2q8x"]
+[ext_resource type="Texture2D" uid="uid://d3coshm7bja4h" path="res://slime tile.png" id="2_112p8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ep3sw"]
+size = Vector2(165, 151)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2u21"]
+texture = ExtResource("2_112p8")
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ep3sw"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_e2u21")
+
 [node name="Node" type="Node" unique_id=1475305846]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=133069625]
+[node name="PLayer" type="CharacterBody2D" parent="." unique_id=1403470673]
+
+[node name="Sprite2D" type="Sprite2D" parent="PLayer" unique_id=1134477376]
+texture = ExtResource("1_j2q8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PLayer" unique_id=1133432735]
+position = Vector2(0.5, -13.5)
+shape = SubResource("RectangleShape2D_ep3sw")
+
+[node name="Camera2D" type="Camera2D" parent="PLayer" unique_id=1723029077]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1612599559]
+tile_set = SubResource("TileSet_ep3sw")
