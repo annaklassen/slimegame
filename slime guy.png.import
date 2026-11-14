@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cng40x0xp7xfo"
-path="res://.godot/imported/slime sprite.webp-5246f830f95ccd8ddc463dc7a632a399.ctex"
+uid="uid://csak2uju7n8vq"
+path="res://.godot/imported/slime guy.png-32f9bccb071d379dab39f1e2baa1c0a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slime sprite.webp"
-dest_files=["res://.godot/imported/slime sprite.webp-5246f830f95ccd8ddc463dc7a632a399.ctex"]
+source_file="res://slime guy.png"
+dest_files=["res://.godot/imported/slime guy.png-32f9bccb071d379dab39f1e2baa1c0a2.ctex"]
 
 [params]
 

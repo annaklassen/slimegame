@@ -1,14 +1,16 @@
 [gd_scene format=4 uid="uid://cqow47bch5ocs"]
 
 [ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://cng40x0xp7xfo" path="res://slime sprite.webp" id="2_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://d3coshm7bja4h" path="res://slime tile.png" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://csak2uju7n8vq" path="res://slime guy.png" id="2_0xm2m"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iqf5"]
-size = Vector2(169, 156)
+[sub_resource type="CircleShape2D" id="CircleShape2D_h2yge"]
+radius = 62.1289
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h2yge"]
+load_path = "res://.godot/imported/slime tile.png-2fddc73c3e4259bf66bdca1c41ad801f.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
-texture = ExtResource("4_1bvp3")
+texture = SubResource("CompressedTexture2D_h2yge")
 3:3/0 = 0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:3/0 = 0
@@ -104,11 +106,13 @@ sources/1 = SubResource("TileSetAtlasSource_lquwl")
 script = ExtResource("1_0xm2m")
 
 [node name="Sprite2D" type="Sprite2D" parent="player" unique_id=315581928]
-texture = ExtResource("2_1bvp3")
+position = Vector2(0.49999857, -0.5)
+scale = Vector2(1.0052084, 0.984375)
+texture = ExtResource("2_0xm2m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=829753291]
-position = Vector2(-1.5, -10)
-shape = SubResource("RectangleShape2D_6iqf5")
+position = Vector2(-9, -16)
+shape = SubResource("CircleShape2D_h2yge")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1032121265]
 
