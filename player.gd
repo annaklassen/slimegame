@@ -27,8 +27,11 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func _on_pick_up_area_2_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
-func _on_pickup_area_area_entered(area):
+func _on_coin_area_entered(area: Area2D) -> void:
+	
 	if area.is_in_group("coin"):
 		area.queue_free()
+func _on_pickup_area_area_entered(area):	
+		if area.is_in_group("coin"):
+			area.queue_free()
+	
