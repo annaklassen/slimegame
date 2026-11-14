@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d3coshm7bja4h" path="res://slime tile.png" id="4_1bvp3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6iqf5"]
-size = Vector2(120, 118)
+size = Vector2(169, 156)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("4_1bvp3")
@@ -149,7 +149,7 @@ script = ExtResource("1_0xm2m")
 texture = ExtResource("2_1bvp3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=829753291]
-position = Vector2(1, -1)
+position = Vector2(-1.5, -10)
 shape = SubResource("RectangleShape2D_6iqf5")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1032121265]
