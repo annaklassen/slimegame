@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c7bhvv2mtj7gu"]
+
+[ext_resource type="Script" uid="uid://clw8mlejwxpvl" path="res://burst.gd" id="1_27hfr"]
+
+[node name="Burst" type="CPUParticles2D" unique_id=41364728]
+position = Vector2(1, -1)
+explosiveness = 1.0
+spread = 65.0
+color = Color(0.6188361, 0.99691933, 0.47619456, 1)
+script = ExtResource("1_27hfr")
